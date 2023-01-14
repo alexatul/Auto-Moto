@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,500;1,600&family=Nunito:wght@200&family=Oxygen:wght@300&family=Tangerine:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500;1,600&family=Nunito:wght@200&family=Oxygen:wght@300&family=Tangerine:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Auto Moto</title>
+
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="logo font-effect-shadow-multiple">
+      <a href="#" target="_self">AUTO MOTO</a>
+    </div>
+
+    <div class="nav-mobile"> <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav class="container-nav">
+      <ul class="navbar-left">
+
+        <li>
+          <a href="#" class="dropdown"> MODELE
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul class="nav-dropdown">
+
+            <li>
+              <a href="#" class="dropdown-link">Modele electrice
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <ul class="nav-dropdown-link">
+                <li>
+                  <a href="#">Peugeot 208</a>
+                </li>
+                <li>
+                  <a href="#">Peugeot e-Boxer</a>
+                </li>
+                <li>
+                  <a href="#">Opel Corsa-e</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="dropdown-link">Modele hybrid
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <ul class="nav-dropdown-link">
+                <li>
+                  <a href="#">Lexus NX</a>
+                </li>
+                <li>
+                  <a href="#">Suzuki Vitara</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="dropdown-link">Modele SUV
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <ul class="nav-dropdown-link">
+                <li>
+                  <a href="#">Volvo XC40</a>
+                </li>
+                <li>
+                  <a href="#">Skoda Kodiaq</a>
+                </li>
+                <li>
+                  <a href="#">Range Rover Evoque</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+
+        <li>
+          <a href="#" class="dropdown"> SHOWROOM
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#">Bucureşti</a>
+            </li>
+            <li>
+              <a href="#">Braşov</a>
+            </li>
+            <li>
+              <a href="#">Timişoara</a>
+            </li>
+            <li>
+              <a href="#">Iaşi</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <ul class="navbar-center"></ul>
+      <ul class="navbar-right">
+        <li>
+          <div class="search-box">
+            <button class="button-search">
+              <input type="text" class="input-search" placeholder="Caută ...">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </li>
+        <li>
+          <button class="button-connect" type="button"><i class="fa-solid fa-cart-shopping"></i>COMANDA MEA</button>
+        </li>
+        <li>
+          <button class="button-login">
+            <i class=" fa-solid fa-user-tie"></i>
+            LOGIN
+          </button>
+          <div id="login-form" class="login-container login-form">
+            <h3>Welcome</h3>
+            <form action="action_process.php" method="post">
+              <div>
+                <span class="close" title="Close">&times;</span>
+              </div>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+              </div>
+              <div class="container-log">
+                <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" required>
+                </div>
+                <button type="submit" class="login-button">Sign In</button>
+                <label class="remember">
+                  <input type="checkbox" checked="checked" name="remember" class="remember"> Remember me
+                </label>
+              </div>
+              <div class="container-log">
+                <button type="button" class="cancel-button">Cancel</button>
+                <span class="forget-password"><a href="#">Forgot password?</a></span>
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="background-container">
+    <div class="background-image">
+      <img src="images/background.jpeg">
+      <div class="background-title">
+        <div class="background-grid-container">
+          <p class="first-title-background-image">CELE MAI NOI MODELE</p>
+          <p class="second-title-background-image">AUTO MOTO</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <form class="select-form" name="form1" id="form1" action="/action_page.php">
+    <div class="selection">
+      Modelul: <select name="select-model" id="select-model">
+        <option value="" selected="selected">Selectează ...</option>
+      </select>
+    </div>
+    <div class="selection">
+      Marca: <div class="select2"><select name="select-brand" id="select-brand">
+          <option value="" selected="selected">Selectează ...</option>
+        </select>
+      </div>
+    </div>
+    <div class="selection">
+      <input class="select-button" type="submit" value="Alege">
+    </div>
+  </form>
+
+  <div class="discover">
+    <h2>DESCOPERĂ MODELELE</h2>
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/VolvoXC40.jpg" alt="Volvo XC60">
+          <div class="carousel-caption">
+            <h3>Volvo XC60</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/LexusNX.jpg" alt="Lexus NX">
+          <div class="carousel-caption">
+            <h3>Lexus NX</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/RangeroverEvoque.jpg" alt="Range Rover Evoque">
+          <div class="carousel-caption">
+            <h3>Range Rover Evoque</h3>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container-describe">
+    <article class="describe">
+      <div class="card-image">
+        <div class="img-describe">
+          <img src="images/Peugeot-e208.jpg">
+        </div>
+        <p>Cu liniile sale sportive şi moderne, vehiculul urban Peugeot te însoţeşte în toate călătoriile tale.
+          Interiorul dezvăluie originalul PEUGEOT i-Cockpit® 3D.
+          Oferă-ți libertatea de a-ți alege un vehicul urban echipat cu un motor electric cu o autonomie WLTP de până la
+          362 km, datorită angajamentului Power of choice.</p>
+        <div class="button-more slide-inside">
+          <a href="#Cpeugeot208">
+            <button class="more-btn">
+              <img src="images/info.svg">
+              Mai Multe
+            </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="describe">
+      <div class="card-image">
+        <div class="img-describe">
+          <img src="images/Peugeot-eBoxer.jpg">
+        </div>
+        <p>Cu ocazia trecerii la noile norme de poluare "Euro 6", PEUGEOT BOXER își reînnoiește gama. Pe lângă
+          nivelurile de echipare PRO și PREMIUM, sunt introduse în gama BOXER versiunile "preconfigurate" GRIP și
+          ASPHALT, alături de noi echipamente.
+          În cele din urmă, acest vehicul utilitar îți oferă libertatea de a alege între un motor Diesel sau electric.
+        </p>
+        <div class="button-more slide-inside">
+          <a href="#Cpeugeotboxer">
+            <button class="more-btn">
+              <img src="images/info.svg">
+              Mai Multe
+            </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="describe">
+      <div class="card-image">
+        <div class="img-describe">
+          <img src="images/Opel-Corsa.jpg">
+        </div>
+        <p>Bucuria de a conduce este electrizantă la volanul unui Corsa-e electric, gata echipat. Noul Corsa-e are o
+          autonomie impresionantă, de 352 km (WLTP) fără reîncărcare.
+          Cu ajutorul a câteva trucuri precum viteza, stilul personal de conducere și utilizarea încălzirii poți spori
+          autonomia modelului tău Corsa-e.</p>
+        <div class="button-more slide-inside">
+          <a href="#Copelcorsa">
+            <button class="more-btn">
+              <img src="images/info.svg">
+              Mai Multe
+            </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="describe">
+      <div class="card-image">
+        <div class="img-describe">
+          <img src="images/Lexus-NX.jpg">
+        </div>
+        <p>Emoţia conduce! Noua generaţie Lexus NX e uimitoare. Crossoverul Self-charging Hybrid NX 350h şi NX 450h+,
+          primul Plug-in Hybrid de la Lexus, sunt fără egal în categoria SUV-urilor premium de clasă medie.
+          Crossoverul are un interior foarte elegant, desăvârşit de maeştri artizani Takumi, e mai conectat graţie
+          tehnologie de ultimă generaţie Lexus Link şi are un sistem de siguranţă performat Lexus Safety System +. </p>
+        <div class="button-more slide-inside">
+          <a href="#Clexusnx">
+            <button class="more-btn">
+              <img src="images/info.svg">
+              Mai Multe
+            </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="describe">
+      <div class="card-image">
+        <div class="img-describe">
+          <img src="images/Suzuki-Vitara.jpg">
+        </div>
+        <p>Apariție radiantă definită de forță și energie. Vitara te aduce în lumina reflectoarelor oriunde ai merge.
+          Cu un design autentic și sete de condus atât în oraș, cât și off-road, te vei bucura de o experiență autentică
+          de condus într-un SUV hybrid bine definit la exterior și rafinat la interior.</p>
+        <div class="button-more slide-inside">
+          <a href="#Csuzukivitara">
+            <button class="more-btn">
+              <img src="images/info.svg">
+              Mai Multe
+            </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="describe">
+      <div class="card-image">
+        <div class="img-describe">
+          <img src="images/Volvo-xc40.jpg">
+        </div>
+        <p>Modelele SUV mild hybrid recuperează energia produsă la frânare și o stochează într-o baterie de 48 V. Când
+          se utilizează această energie, consumul de combustibil și emisiile de eșapament sunt, amândouă, reduse.</p>
+        <div class="button-more slide-inside">
+          <a href="#Cvolvoxc40">
+            <button class="more-btn">
+              <img src="images/info.svg">
+              Mai Multe
+            </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="describe">
+      <div class="card-image">
+        <div class="img-describe">
+          <img src="images/Skoda-Kodiaq.jpg">
+        </div>
+        <p>Cu sistemul său inteligent de tracţiune integrală, noul SUV Skoda este pregătit pentru toate situaţiile.
+          Astfel, Kodiaq se face remarcat cu performanţe excelente, atât pe drumurile neasfaltate, cât şi pe macadam,
+          deoarece sistemul 4X4 cu cuplah lamelar controlat electronic reacţionează în câteva milisecunde la cele mai
+          mici modificări în suprafaţa de rulare.</p>
+        <div class="button-more slide-inside">
+          <a href="#Cskodakodiaq">
+            <button class="more-btn">
+              <img src="images/info.svg">
+              Mai Multe
+            </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="describe">
+      <div class="card-image">
+        <div class="img-describe">
+          <img src="images/RangeRover-Evoque.jpg">
+        </div>
+        <p>Încrezător şi special, Range Rover Evoque se remarcă prin linii rafinate, care îi conferă o personalitate
+          aparte.
+          Suprafeţele aerisite şi gama de materiale premium atent prelucrate ajută la crearea unui ambiant perfect.</p>
+        <div class="button-more slide-inside">
+          <a href="#Crangeroverevoque">
+            <button class="more-btn">
+              <img src="images/info.svg">
+              Mai Multe
+            </button>
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!--PEUGEOT 208-->
+  <div id="Cpeugeot208" class="about-car">
+    <div class="navbar-car">
+      <div class="menu-bar-car">
+        <a href="#"><i class="fa fa-bars"></i></a>
+        <div class="logo-car font-effect-shadow-multiple">e-208</div>
+        <ul class="submenu-car">
+          <li><a class="hover-link-navbar" href="#Cpeugeot208-exterior">Exterior</a></li>
+          <li><a class="hover-link-navbar" href="#Cpeugeot208-interior">Interior</a></li>
+          <li><a class="hover-link-navbar" href="#Cpeugeot208-tehnologie">Tehnologie</a></li>
+          <li><a class="hover-link-navbar" href="#Cpeugeot208-dimensiuni">Dimensiuni</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div id="Cpeugeot208-exterior" class="about-describe-car">
+      <h2 class="title-car">EXTERIOR</h2>
+      <h2>PEUGEOT 208: UN VEHICUL URBAN ELECTRIC</h2>
+      <div class="text-describe-car">
+        <p>Cu liniile sale sportive şi moderne, vehiculul urban Peugeot te însoteşte în toate călătoriile tale.
+          Interiorul dezvăluie originalul PEUGEOT i-Cockpit® 3D. Oferă-ți libertatea de a-ți alege un vehicul urban
+          echipat cu un motor electric cu o autonomie WLTP de până la 362 km, datorită angajamentului Power of choice.
+        </p>
+        <p>Bateria de înaltă tensiune litiu-ion (400 V) este dispozitivul de stocare a energiei electrice integrate.
+          Este amplasată sub podea, fără ca spațiul la bord și volumul portbagajului să fie afectate. Bateria are o
+          capacitate de 50 kWh și o putere maximă de 100 kW pentru o autonomie de până la 340 km WLTP.</p>
+        <p> Partea din spate prezintă un stil distinct, graţie benzii vopsite negru lucios şi stopurilor Full LED ce pun
+          în evidenţă cele 3 gheare, aprinse zi şi noapte.
+          Noul Peugeot e-208 este dotat cu un plafon panoramic Cielo ce inundă habitaclul cu lumina.</p>
+      </div>
+    </div>
+    <div class="container-car-images">
+      <div class="car-images">
+        <div class="horizontal-car"><img src="images/Peugeot208-exterior1.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeot208-exterior2.jpg"></div>
+        <div><img src="images/Peugeot208-exterior3.jpg"></div>
+        <div class="big-car"><img src="images/Peugeot208-exterior4.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeot208-exterior5.jpg"></div>
+        <div><img src="images/Peugeot208-exterior6.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeot208-exterior7.jpg"></div>
+        <div class="big-car"><img src="images/Peugeot208-exterior8.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeot208-exterior9.jpg"></div>
+      </div>
+    </div>
+
+    <div id="Cpeugeot208-interior" class="about-describe-car">
+      <h2 class="title-car">INTERIOR</h2>
+      <h2>PEUGEOT i-Cockpit® 3D</h2>
+      <div class="text-describe-car">
+        <p>Experimentează un condus agil și intuitiv grație volanului compact multifuncțional, panoului digital de bord
+          3D complet configurabil, ecranului tactil HD de 10" și celor 7 butoane de tip switch.
+          Nu în cele din urmă, poți personaliza ambianța interioară prin intermediul celor 8 LED-uri RGB, pentru un
+          aspect și mai modern. </p>
+        <p>Ecranul tactil este controlat prin recunoaşterea vocală, comenzile pe volan sau pur şi simplu cu ajutorul
+          celor 7 butoane tactile.
+          Lăsa-te ghidat cu Pachetul de navigaţie conectată care include traficul în timp real şi zone de pericol de la
+          TomTom Service, precum şi locaţia şi disponibilitatea staţiilor publice de încarcat.</p>
+        <p>Citadina electrică seduce prin funcţionalitatea şi conectivitatea sa. În partea din faţă, un compartiment de
+          depozitare înteligent încarcă smartphone-ul prin inducţie. De asemenea, habitaclul dispune de până la patru
+          porturi USB pentru dispozitivele mobile.</p>
+      </div>
+    </div>
+    <div class="container-car-images">
+      <div class="car-images">
+        <div class="horizontal-car"><img src="images/Peugeot208-interior1.jpg"></div>
+        <div class="big-car"><img src="images/Peugeot208-interior2.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeot208-interior3.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeot208-interior4.jpg"></div>
+        <div class="horizontal-car"><img src="images/Peugeot208-interior5.jpg"></div>
+      </div>
+    </div>
+
+    <div id="Cpeugeot208-tehnologie" class="about-describe-car">
+      <h2 class="title-car">TEHNOLOGIE</h2>
+      <h2>OPTIMIZEAZĂ AUTONOMIA VEHICULULUI TĂU</h2>
+      <div class="text-describe-car">
+        <p>Active Safety Brake, sistemul de asistenţă la condus care te avertizează atunci când sunt detectate obstacole
+          în faţa vehiculuilui.
+          Dacă nu reacţionezi, autovehiculul franează automat. Acest sistem de frănare automată de urgenţă funcţionează
+          până la viteza de 85 de km/h.</p>
+        <p>Facilitează manevrele de parcare cu tehnologia Park Assist, care detectează un spaţiu de parcare adecvat.
+          La cererea ta, sistemul preia controlul direcţie, fără ca tu să fii nevoit să atingi volanul. Păstrezi
+          controlul asupra acceleraţiei, frânei şi schimbătorului de viteze.</p>
+        <p>Sistemul de monitorizare a unghiului mort te avertizează în legatură cu prezenţa unui vehicul în unghiul
+          mort.
+          Alerta este dată de un Led martor care se aprinde in oglinda de pe partea in cauza. Sistemul se activeaza la
+          viteze de peste 65 km/h.</p>
+      </div>
+    </div>
+    <div class="container-car-images">
+      <div class="car-images">
+        <!--denumire comuna-->
+        <div class="horizontal-car"><img src="images/Peugeot208-tehnologie5.jpg"></div>
+        <div class="big-car"><img src="images/Peugeot208-tehnologie2.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeot208-tehnologie3.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeot208-tehnologie1.jpg"></div>
+        <div class="horizontal-car"><img src="images/Peugeot208-tehnologie4.jpg"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!--PEUGEOT BOXER-->
+
+  <div id="Cpeugeotboxer" class="about-car">
+    <div class="navbar-car">
+      <div class="menu-bar-car">
+        <a href="#"><i class="fa fa-bars"></i></a>
+        <div class="logo-car font-effect-shadow-multiple">e-Boxer</div>
+        <ul class="submenu-car">
+          <li><a href="#Cpeugeotboxer-exterior">Exterior</a></li>
+          <li><a href="#Cpeugeotboxer-interior">Interior</a></li>
+          <li><a href="#Cpeugeotboxer-tehnologie">Tehnologie</a></li>
+          <li><a href="#Cpeugeotboxer-dimensiuni">Dimensiuni</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="Cpeugeotboxer-exterior" class="about-describe-car">
+      <h2 class="title-car">EXTERIOR</h2>
+      <h2>PEUGEOT E-BOXER: AUTOUTILITARA PROFESIONALĂ</h2>
+      <div class="text-describe-car">
+        <p>Cu ocazia trecerii la noile norme de poluare "Euro 6", PEUGEOT BOXER își reînnoiește gama. Pe lângă
+          nivelurile de echipare PRO și PREMIUM, sunt introduse în gama BOXER versiunile "preconfigurate" GRIP și
+          ASPHALT, alături de noi echipamente.
+          În cele din urmă, acest vehicul utilitar îți oferă libertatea de a alege între un motor Diesel sau electric.
+        </p>
+        <p>Noul PEUGEOT e-Boxer poate să circule și să acceseze zone cu trafic restricționat grație motorului electric.
+          Trapa electrică a fost amplasată în față, pe partea conducătorului auto, pentru o încărcare practică.
+          PEUGEOT e-Boxer este disponibil în caroserie șasiu cabină simplă, șasiu cabină dublă și platou cabină pentru
+          transformări care răspund tuturor nevoilor profesioniștilor.</p>
+        <p>Noul Peugeot e-Boxer pastrează designul puternic, robust și elegant al versiunilor termice la care se adaugă,
+          la exterior, monograma "e-Boxer" ce semnează apartentenţa la gama electrică a utilitarelor Peugeot.</p>
+      </div>
+    </div>
+    <div class="container-car-images">
+      <div class="car-images">
+        <!--denumire comuna-->
+        <div class="horizontal-car"><img src="images/Peugeotboxer-exterior1.jpg"></div>
+        <div class="vertical-car"><img src="images/Peugeotboxer-exterior2.jpg"></div>
+        <div><img src="images/Peugeotboxer-exterior3.jpg"></div>
+        <div class="big-car"><img src="images/Peugeotboxer-exterior4.jpg"></div>
+        <div><img src="images/Peugeotboxer-exterior5.jpg"></div>
+        <div class="horizontal-car"><img src="images/Peugeotboxer-exterior6.jpg"></div>
+      </div>
+      <div id="Cpeugeotboxer-interior" class="about-describe-car">
+        <h2 class="title-car">INTERIOR</h2>
+        <h2>CONFORT LA CONDUS</h2>
+        <div class="text-describe-car">
+          <p>Noul Peugeot e-Boxer este echipat, indiferent de capacitatea bateriei alese, cu un motor electric cu o
+            putere de 90kW, care oferă un cuplu motor de 260 Nm asociat cu o cutie de viteză automată. Manetele de
+            selectare a vitezelor a fost înlocuită cu 3 butoane: D(Drive), N(Neutru) si R(Marşarier).</p>
+          <p>Cu noul sistem de navigaţie şi ecranul său tactil de 9 inch beneficiezi de: funcţia Mirror Screen,
+            posibilitatea de a conecta până la 2 telefoane simultan prin Bluetooth, introduci dimensiunile vehiculului
+            pentru a evita posibilele drumuri cu restricţii de dimensiune.</p>
+          <p>O oglinda retrovizoare interioară specifică echipată cu afişaj oferă informaţii cu privire la funcţionarea
+            noului Peugeot e_boxer: nivelul de încărcare a bateriei în procente, autonomia în kilometri, tensiunea în
+            volţi, amperajul şi modul de condus.</p>
+        </div>
+      </div>
+      <div class="container-car-images">
+        <div class="car-images">
+          <!--denumire comuna-->
+          <div class="horizontal-car"><img src="images/peugeotboxer-interior1.jpg"></div>
+          <div class="big-car"><img src="images/peugeotboxer-interior2.jpg"></div>
+          <div class="vertical-car"><img src="images/peugeotboxer-interior3.jpg"></div>
+          <div class="vertical-car"><img src="images/peugeotboxer-interior4.jpg"></div>
+          <div class="horizontal-car"><img src="images/peugeotboxer-interior5.jpg"></div>
+        </div>
+      </div>
+
+      <div id="Cpeugeotboxer-tehnologie" class="about-describe-car">
+        <h2 class="title-car">TEHNOLOGIE</h2>
+        <h2>SIGURANȚĂ & SISTEME DE ASISTENȚĂ LA CONDUS</h2>
+        <div class="text-describe-car">
+          <p>Sistemul de monitorizare a unghiului mort avertizează conducatorul auto de prezenţa unui altui vehicul în
+            unghiurile moarte ale modelului Peugeot Boxer, de îndata ce acesta prezintă un eventual pericol.
+            Alerta este dată de un martor luminos care se aprinde pe sticla oglinzii retrovizoare de pe partea în cauză,
+            de îndată ce vehiculul (automobil, camion, bicicleta) este detectat.</p>
+          <p>Alerta de părăsire involuntară a benzii de rulare (AFIL) detectează, cu ajutorul unei camere video,
+            depăşirea involuntară a marcajului continuu sau discontinuu. Pentru un condus în deplină siguranţă, camera
+            video analizează imaginile apoi avertizează şoferul atât sonor, cât şi vizual, la viteze de peste 60 km/h.
+          </p>
+          <p>Active Safety Brake (frânare automată de urgenţă) intervine atunci când şoferul nu reacţionează destul de
+            repede şi nu actionează frâna autovehicului.
+            Sistemul contribuie astfel, fără intervenţia conducatorului auto, la evitarea unei coliziuni, reducând
+            viteza vehicului.</p>
+        </div>
+      </div>
+      <div class="container-car-images">
+        <div class="car-images">
+          <!--denumire comuna-->
+          <div class="horizontal-car"><img src="images/peugeotboxer-tehnologie5.jpg"></div>
+          <div class="big-car"><img src="images/peugeotboxer-tehnologie1.jpg"></div>
+          <div class="vertical-car"><img src="images/peugeotboxer-tehnologie3.jpg"></div>
+          <div class="vertical-car"><img src="images/peugeotboxer-tehnologie1.jpg"></div>
+          <div class="horizontal-car"><img src="images/peugeotboxer-tehnologie4.jpg"></div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!--OPEL CORSA-->
+
+    <div id="Copelcorsa" class="about-car">
+      <div class="navbar-car">
+        <div class="menu-bar-car">
+          <a href="#"><i class="fa fa-bars"></i></a>
+          <div class="logo-car font-effect-shadow-multiple">Corsa-e</div>
+          <ul class="submenu-car">
+            <li><a href="#Copelcorsa-exterior">Exterior</a></li>
+            <li><a href="#Copelcorsa-interior">Interior</a></li>
+            <li><a href="#Copelcorsa-tehnologie">Tehnologie</a></li>
+            <li><a href="#Copelcorsa-dimensiuni">Dimensiuni</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="Copelcorsa-exterior" class="about-describe-car">
+        <h2 class="title-car">EXTERIOR</h2>
+        <h2>PUR ŞI SIMPLU ELECTRIC</h2>
+        <div class="text-describe-car">
+          <p>Noul Corsa este un autovehicul îndrăzneț și autentic care subliniază precizia ingineriei germane, cu o
+            parte frontală dinamică și un design atrăgător. Noul Corsa atrage din orice unghi. </p>
+          <p>Cu un acoperiș elegant poți adăuga negru sau alb la culorile tale exterioare preferate. Alege trapa
+            panoramică¹ pentru mai multă lumină în interiorul autovehiculului Corsa-e.</p>
+          <p>Dacă vrei să ieși în evidență, atunci jantele din aliaj de 16" sau 17" cu design atrăgător sunt alegerea
+            ideală. Vrei să adaugi un pic de contrast? Jantele exclusiviste de 17", din aliaj ușor, negre/argintii, pe
+            lângă faptul că oferă un contrast atrăgător de culori, sunt ușoare și aerodinamice, sporind astfel
+            eficiența.</p>
+        </div>
+      </div>
+      <div class="container-car-images">
+        <div class="car-images">
+          <!--denumire comuna-->
+          <div class="horizontal-car"><img src="images/opelcorsa-exterior2.jpg"></div>
+          <div class="vertical-car"><img src="images/opelcorsa-exterior5.jpg"></div>
+          <div><img src="images/opelcorsa-exterior3.jpg"></div>
+          <div class="big-car"><img src="images/opelcorsa-exterior4.jpg"></div>
+          <div><img src="images/opelcorsa-exterior1.jpg"></div>
+          <div class="horizontal-car"><img src="images/opelcorsa-exterior6.jpg"></div>
+        </div>
+        <div id="Copelcorsa-interior" class="about-describe-car">
+          <h2 class="title-car">INTERIOR</h2>
+          <h2>SENZATIE DE LUX</h2>
+          <div class="text-describe-car">
+            <p>Interiorul impresionează imediat prin măiestria precisă, detaliile sofisticate și materialele premium
+              de
+              înaltă calitate. Cu panoul de instrumente sportiv și ergonomic, cu personalitatea unui autovehicul de
+              mari
+              dimensiuni, abia aștepți să pleci la drum. </p>
+            <p>Bucură-te de un sistem infotainment intuitiv și ușor de utilizat, în timp ce te concentrezi la drum.
+              Panoul de instrumente complet digital afișează informații despre viteză, navigație și multe altele,
+              chiar
+              acolo unde ai nevoie - în fața ochilor.</p>
+            <p>Mersul înapoi a devenit mai sigur și mai simplu, în special în oraș și în locurile de parcare înguste.
+              Camera video panoramică pentru marșarier oferă o imagine la 180° a zonei din spatele autovehiculului
+              Corsa-e. În scurt timp, vei deveni expert în manevra de marșarier.</p>
+          </div>
+        </div>
+        <div class="container-car-images">
+          <div class="car-images">
+            <!--denumire comuna-->
+            <div class="horizontal-car"><img src="images/opelcorsa-interior1.jpg"></div>
+            <div class="big-car"><img src="images/opelcorsa-interior3.jpg"></div>
+            <div class="vertical-car"><img src="images/opelcorsa-interior2.jpg"></div>
+            <div class="vertical-car"><img src="images/opelcorsa-interior4.jpg"></div>
+            <div class="horizontal-car"><img src="images/opelcorsa-interior5.jpg"></div>
+          </div>
+        </div>
+
+        <div id="Copelcorsa-tehnologie" class="about-describe-car">
+          <h2 class="title-car">TEHNOLOGIE</h2>
+          <h2>SIGURANȚĂ & INOVATII</h2>
+          <div class="text-describe-car">
+            <p>Bucură-te de siguranță sporită în timpul condusului. Asistentul pentru menținerea benzii de circulație
+              (LKA) reacționează activ la o situație periculoasă prin aducerea ușoară a autovehiculului înapoi pe
+              banda
+              sa. Funcția de avertizare privind depășirea benzii de circulație (LDP) te avertizează atunci când
+              părăsești banda în mod neintenționat. Prin urmare, ambele sisteme te ajută să eviți accidentele fatale
+              cauzate de oboseală sau distragerea atenției. </p>
+            <p>Tempomatul automat îți oferă o experiență de conducere lipsită de stres. Accelerează și decelerează
+              automat și ajută la menținerea unei distanțe sigure față de autovehiculul din față. Nu vei mai parca
+              singur niciodată. Sistemul avansat de asistare la parcare detectează locurile de parcare și controlează
+              volanul. Tu trebuie doar să accelerezi și să frânezi. Parcarea nu poate fi mai confortabilă de atât.</p>
+            <p>Următoarea ta destinație este la o atingere distanță. Alege între Multimedia Navi Pro cu un afișaj de
+              10"
+              și Multimedia Navi cu un afișaj de 7". Gândește în stil mare și mergi oriunde vrei. Simte-te liber,
+              simte-te bine. Ecran tactil, Apple CarPlay™ și Android Auto™. Sistemele de infotainment ale noului
+              Corsa-e
+              îți oferă toată libertatea de comunicare și divertisment, inclusiv comandă vocală și streaming audio
+              Bluetooth®. </p>
+          </div>
+        </div>
+        <div class="container-car-images">
+          <div class="car-images">
+            <!--denumire comuna-->
+            <div class="horizontal-car"><img src="images/opelcorsa-tehnologie2.jpg"></div>
+            <div class="big-car"><img src="images/OpelCorsa-tehnologie1.jpg"></div>
+            <div class="vertical-car"><img src="images/opelcorsa-tehnologie4.jpg"></div>
+            <div class="vertical-car"><img src="images/opelcorsa-tehnologie3.jpg"></div>
+            <div class="horizontal-car"><img src="images/opelcorsa-tehnologie5.jpg"></div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!--LEXUS NX-->
+
+      <div id="Clexusnx" class="about-car">
+        <div class="navbar-car">
+          <div class="menu-bar-car">
+            <a href="#"><i class="fa fa-bars"></i></a>
+            <div class="logo-car font-effect-shadow-multiple">NX</div>
+            <ul class="submenu-car">
+              <li><a href="#Clexusnx-exterior">Exterior</a></li>
+              <li><a href="#Clexusnx-interior">Interior</a></li>
+              <li><a href="#Clexusnx-tehnologie">Tehnologie</a></li>
+              <li><a href="#Clexusnx-dimensiuni">Dimensiuni</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="Clexusnx-exterior" class="about-describe-car">
+          <h2 class="title-car">EXTERIOR</h2>
+          <h2>ASPECT RADICAL ŞI PROVOCATOR</h2>
+          <div class="text-describe-car">
+            <p>Emoţia conduce! Noua generaţie Lexus NX e uimitoare. Crossoverul Self-charging Hybrid NX 350h şi NX
+              450h+, primul Plug-in Hybrid de la Lexus.</p>
+            <p>Noul NX 450h+, primul model Plug-in Hybrid de la Lexus, este rezultatul a peste 15 de ani de experienţă
+              in domeniul tehnologiei self-charging hybrid şi deschide calea spre noi modele 100% electrice. </p>
+            <p>NX 450h+, modelul Hybrid de la Lexus, beneficiază de staţia Lexus de încărcare la domiciliu, iar
+              detalii
+              despre reţeaua pan-europeana de încărcare sunt disponibile prin aplicaţia Lexus. </p>
+          </div>
+        </div>
+        <div class="container-car-images">
+          <div class="car-images">
+            <!--denumire comuna-->
+            <div class="horizontal-car"><img src="images/lexusnx-exterior1.jpg"></div>
+            <div class="vertical-car"><img src="images/lexusnx-exterior2.jpg"></div>
+            <div><img src="images/lexusnx-exterior3.jpg"></div>
+            <div class="big-car"><img src="images/lexusnx-exterior4.jpg"></div>
+            <div><img src="images/lexusnx-exterior5.jpg"></div>
+            <div class="horizontal-car"><img src="images/LexusNX-exterior6.jpg"></div>
+          </div>
+          <div id="Clexusnx-interior" class="about-describe-car">
+            <h2 class="title-car">INTERIOR</h2>
+            <h2>HABITACLUL TAZUNA</h2>
+            <div class="text-describe-car">
+              <p>„Mâinile pe volan, ochii la drum!” Tazuna – se traduce „frâu” din limba japoneză şi e o filosofie
+                inspirată de relaţia dintre cal şi călăreţ. La Lexus, Tazuna e un sistem de comandă sofisticat, prin
+                care şoferul are la dispozitia sa design-ul smart şi tehnologia fără cusur a maşinii. Lexus NX450h+ e
+                primul model de serie care adoptă Tazuna. </p>
+              <p>Având în vedere că volanul și schimbătorul de viteze pot afecta semnificativ experiența la volan,
+                designerii au lucrat cu un „Takumi” Lexus pentru a rafina până la perfecțiune aceste puncte de
+                contact.
+                Pentru volan, s-a pus un accent special pe formă și pe secțiunea transversală pentru a crea o senzație
+                excelentă și o stabilitate superioară a direcției. Suporturile pentru degetele mari și butoanele
+                tactile
+                au fost de asemenea reproiectate.</p>
+              <p>Aflat în apropierea volanului, selectorul modului de condus le permite șoferilor să aleagă între
+                modurile Eco, Normal și Sport, pentru a maximiza eficiența, dinamismul sau rafinamentul mașinii. Pe
+                lângă modurile Eco și Normal, noul NX F SPORT dispune de modurile suplimentare Custom, Sport S and
+                Sport
+                S+.</p>
+            </div>
+          </div>
+          <div class="container-car-images">
+            <div class="car-images">
+              <!--denumire comuna-->
+              <div class="horizontal-car"><img src="images/lexusnx-interior1.jpg"></div>
+              <div class="big-car"><img src="images/lexusnx-interior2.jpg"></div>
+              <div class="vertical-car"><img src="images/lexusnx-interior3.jpg"></div>
+              <div class="vertical-car"><img src="images/lexusnx-interior4.jpg"></div>
+              <div class="horizontal-car"><img src="images/lexusnx-interior5.jpg"></div>
+            </div>
+          </div>
+
+          <div id="Clexusnx-tehnologie" class="about-describe-car">
+            <h2 class="title-car">TEHNOLOGIE</h2>
+            <h2>SIGURANȚĂ & TEHNOLOGIE</h2>
+            <div class="text-describe-car">
+              <p>Sistemul de anticipare şi avertizare a coliziunilor frontale poate detecta chiar şi noaptea pietonii,
+                iar pe timpul zilei bicicliştii. Sensibilitatea camerei din sistem şi raza dinamică au fost
+                îmbunătăţite
+                pentru a ajuta la reducerea accidentelor în conditii de întuneric, de exemplu, în situaţia în care un
+                pieton se află în faţa unui vehicul care vine din sens opus (dificil de identificat din cauza
+                luminilor
+                vehiculului de pe contrasens).</p>
+              <p>Pentru a permite o cabină spațioasă cu un spațiu pentru bagaje de 500 de litri și un centru de
+                greutate
+                jos, bateria litiu-ion puternică de 18,1 kW a modelului NX 450h+ este montată sub podeaua
+                habitaclului.
+                Acest nou pachet de baterii folosește 96 de celule de baterie litiu-ion de mare capacitate, realizând
+                o
+                autonomie combinată de top în clasă de 65 km (80 km în oraș) în modul EV. Nou dezvoltată pentru NX
+                350h
+                și instalată sub scaunele din spate, această baterie litiu-ion contribuie la interiorul spațios și la
+                performanța excelentă de conducere. Celulele sale litiu-ion extrem de ușoare îmbunătățesc performanța
+                de
+                încărcare, iar forma compactă și sistemul de răcire au fost optimizate.</p>
+              <p>Blocurile optice elegante cu iluminare LED asigură recognoscibilitatea instantanee a modelului
+                dumneavoastră Lexus pe timpul nopţii. Tehnologia de turnare în masă conferă acestora aspectul
+                cristalin
+                şi prezenţa îndrazneaţa atunci când sunt stinse.</p>
+            </div>
+          </div>
+          <div class="container-car-images">
+            <div class="car-images">
+              <!--denumire comuna-->
+              <div class="horizontal-car"><img src="images/lexusnx-tehnologie1.jpg"></div>
+              <div class="big-car"><img src="images/lexusnx-tehnologie3.jpg"></div>
+              <div class="vertical-car"><img src="images/lexusnx-tehnologie5.jpg"></div>
+              <div class="vertical-car"><img src="images/lexusnx-tehnologie2.jpg"></div>
+              <div class="horizontal-car"><img src="images/lexusnx-tehnologie4.jpg"></div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!--SUZUKI VITARA-->
+
+        <div id="Csuzukivitara" class="about-car">
+          <div class="navbar-car">
+            <div class="menu-bar-car">
+              <a href="#"><i class="fa fa-bars"></i></a>
+              <div class="logo-car font-effect-shadow-multiple">Vitara</div>
+              <ul class="submenu-car">
+                <li><a href="#Csuzukivitara-exterior">Exterior</a></li>
+                <li><a href="#Csuzukivitara-interior">Interior</a></li>
+                <li><a href="#Csuzukivitara-tehnologie">Tehnologie</a></li>
+                <li><a href="#Csuzukivitara-dimensiuni">Dimensiuni</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="Csuzukivitara-exterior" class="about-describe-car">
+            <h2 class="title-car">EXTERIOR</h2>
+            <h2>Stil îndrăzneț</h2>
+            <div class="text-describe-car">
+              <p>Apariție radiantă definită de forță și energie. Vitara te aduce în lumina reflectoarelor oriunde ai
+                merge. Cu un design autentic și sete de condus atât în oraș, cât și off-road, te vei bucura de o
+                experiență autentică de condus într-un SUV bine definit la exterior și rafinat la interior.</p>
+              <p>Noile faruri LED cu bandă luminoasă de culoare albastră îi oferă noului Vitara un look special,
+                dintr-un univers futurist. Esența limbajului de design Suzuki, precum grila robustă cu 5 fante și bara
+                față proeminentă decorată cu elemente cromate îi oferă un look stilat și modern noului Vitara.</p>
+              <p> Imprietenește-te cu un performer care vede o provocare în cele mai dificile suprafețe și condiții de
+                vreme, propulsat de motoare eficiente și potente din gama Boosterjet si Dualjet. Echipat cu sistem
+                unic
+                de tracțiune 4x4 ALLGRIP. Motivat de genele autentice ale unui SUV Suzuki: bucurie din plin la volan,
+                amplificată de aderență maximă în orice moment.</p>
+            </div>
+          </div>
+          <div class="container-car-images">
+            <div class="car-images">
+              <!--denumire comuna-->
+              <div class="horizontal-car"><img src="images/suzukivitara-exterior1.jpg"></div>
+              <div class="vertical-car"><img src="images/suzukivitara-exterior2.jpg"></div>
+              <div><img src="images/suzukivitara-exterior3.jpg"></div>
+              <div class="big-car"><img src="images/suzukivitara-exterior4.jpg"></div>
+              <div class="vertical-car"><img src="images/suzukivitara-exterior5.jpg"></div>
+              <div><img src="images/suzukivitara-exterior6.jpg"></div>
+              <div class="vertical-car"><img src="images/suzukivitara-exterior7.jpg"></div>
+              <div class="big-car"><img src="images/suzukivitara-exterior8.jpg"></div>
+              <div class="vertical-car"><img src="images/suzukivitara-exterior9.jpg"></div>
+            </div>
+          </div>
+
+          <div id="Csuzukivitara-interior" class="about-describe-car">
+            <h2 class="title-car">INTERIOR</h2>
+            <h2>PEUGEOT i-Cockpit® 3D</h2>
+            <div class="text-describe-car">
+              <p>Experimentează un condus agil și intuitiv grație volanului compact multifuncțional, panoului digital
+                de
+                bord 3D complet configurabil, ecranului tactil HD de 10" și celor 7 butoane de tip switch.
+                Nu în cele din urmă, poți personaliza ambianța interioară prin intermediul celor 8 LED-uri RGB, pentru
+                un aspect și mai modern. </p>
+              <p>Ecranul tactil este controlat prin recunoasterea vocala, comenzile pe volan sau pur si simplu cu
+                ajutorul celor 7 butoane tactile. Lasa-te ghidat cu Pachetul de navigatie conectata care include
+                Trafic
+                in timp real si Zone de pericol de la TomTom Service, precum si locatia si disponibilitatea statiilor
+                publice de incarcat.</p>
+              <p>Citadina electrica seduce prin functionalitatea si conectivitatea sa. In partea din fata, un
+                compartiment de depozitare inteligent incarca smartphone-ul prin inductie. De asemenea, habitaclul
+                dispune de pana la patru porturi USB pentru dispozitivele mobile.</p>
+            </div>
+          </div>
+          <div class="container-car-images">
+            <div class="car-images">
+              <!--denumire comuna-->
+              <div class="horizontal-car"><img src="images/suzukivitara-interior1.jpg"></div>
+              <div class="big-car"><img src="images/suzukivitara-interior2.jpg"></div>
+              <div class="vertical-car"><img src="images/suzukivitara-interior3.jpg"></div>
+              <div class="vertical-car"><img src="images/suzukivitara-interior4.jpg"></div>
+              <div class="horizontal-car"><img src="images/suzukivitara-interior5.jpg"></div>
+            </div>
+          </div>
+
+          <div id="Csuzukivitara-tehnologie" class="about-describe-car">
+            <h2 class="title-car">TEHNOLOGIE</h2>
+            <h2>SIGURANTA & NOUA TEHNOLOGIE</h2>
+            <div class="text-describe-car">
+              <p>Atunci când este detectat un vehicul în față, sistemul cruise control adaptiv folosește un senzor
+                radar
+                de ultimă generație pentru a menține distanța între cele două vehicule - aceasta poate fi mărită sau
+                micșorată cu ajutorul a trei setări pre-stabilite.** Dacă în față nu există alte vehicule, sistemul
+                menține constantă viteza setată de șofer (de la 40 km/h în sus).</p>
+              <p>Alege cu ușurință modul de rulare care ți se potrivește cel mai bine - Auto, Sport, Snow sau Lock -
+                cu
+                ajutorul selectorului rotativ de pe consola centrală. Ecranul multicolor amplasat în centrul
+                instrumentarului de bord informează utilizatorul cu privire la modul de rulare activ.</p>
+              <p>În mișcare, Vitara folosește două sisteme de detecție - o cameră video monoculară și un senzor laser
+                pentru a determina dacă există riscul unei coliziuni frontale cu un alt vehicul sau cu un pieton. Dacă
+                un potențial impact este detectat, vehiculul reacționează în trei moduri, în funcție de situație.</p>
+            </div>
+          </div>
+          <div class="container-car-images">
+            <div class="car-images">
+              <!--denumire comuna-->
+              <div class="horizontal-car"><img src="images/suzukivitara-tehnologie5.jpg"></div>
+              <div class="big-car"><img src="images/suzukivitara-tehnologie2.jpg"></div>
+              <div class="vertical-car"><img src="images/suzukivitara-tehnologie3.jpg"></div>
+              <div class="vertical-car"><img src="images/suzukivitara-tehnologie1.jpg"></div>
+              <div class="horizontal-car"><img src="images/suzukivitara-tehnologie4.jpg"></div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <!--VOLVO XC40-->
+
+        <div id="Cvolvoxc40" class="about-car">
+          <div class="navbar-car">
+            <div class="menu-bar-car">
+              <a href="#"><i class="fa fa-bars"></i></a>
+              <div class="logo-car font-effect-shadow-multiple">XC40</div>
+              <ul class="submenu-car">
+                <li><a href="#Cvolvoxc40-exterior">Exterior</a></li>
+                <li><a href="#Cvolvoxc40-interior">Interior</a></li>
+                <li><a href="#Cvolvoxc40-tehnologie">Tehnologie</a></li>
+                <li><a href="#Cvolvoxc40-dimensiuni">Dimensiuni</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="Cvolvoxc40-exterior" class="about-describe-car">
+            <h2 class="title-car">EXTERIOR</h2>
+            <h2>DESIGN INOVATOR ŞI VERSATIL</h2>
+            <div class="text-describe-car">
+              <p>Alege Volvo XC40 Ultimate pentru călătorii rafinate, cu un consum redus de combustibil, dar fără
+                compromisuri în privința performanțelor.
+                Potrivit pentru fiecare zi, pentru fiecare călătorie, pentru oricând, pentru oriunde!</p>
+              <p>Cu un design actual, cu spații de stocare pentru orice, cu Google integrat, faruri cu tehnologie
+                Pixel,
+                sistem audio High Performance Pro Harman Kardon, Pilot Automat Adaptiv, BLIS, Sistem parcare Bird View
+                360°, Volvo XC40 Ultimate este creat pentru tine și este disponibil pentru livrare imediat! </p>
+              <p>Fiecare picătură de combustibil economisită e de ajutor și, în modelele noastre mild hybrid, te
+                bucuri
+                de un consum redus de combustibil fără compromisuri în privința performanțelor. </p>
+            </div>
+          </div>
+          <div class="container-car-images">
+            <div class="car-images">
+              <!--denumire comuna-->
+              <div class="horizontal-car"><img src="images/volvoxc40-exterior1.jpg"></div>
+              <div class="vertical-car"><img src="images/volvoxc40-exterior2.jpg"></div>
+              <div><img src="images/volvoxc40-exterior3.jpg"></div>
+              <div class="big-car"><img src="images/volvoxc40-exterior4.jpg"></div>
+              <div><img src="images/volvoxc40-exterior5.jpg"></div>
+              <div class="horizontal-car"><img src="images/volvoxc40-exterior6.jpg"></div>
+            </div>
+            <div id="Cvolvoxc40-interior" class="about-describe-car">
+              <h2 class="title-car">INTERIOR</h2>
+              <h2>DEPOZITARE INTELIGENTĂ</h2>
+              <div class="text-describe-car">
+                <p>Utilizarea mai multor materiale sustenabile e una dintre modalitățile prin care reducem impactul
+                  XC40
+                  Recharge asupra mediului. De exemplu, mocheta din interior este fabricată integral din plastic
+                  reciclat.</p>
+                <p>În interior, vei descoperi soluții inteligente de depozitare pentru sticle de apă, genți de sport,
+                  telefoane, laptopuri, mâncarea la pachet și multe altele, precum și un compartiment frontal pentru
+                  cablurile de încărcare.</p>
+                <p>XC40 Recharge nu te forțează să alegi între putere și stilul responsabil de a conduce. Doar
+                  așază-te,
+                  selectează o treaptă de viteză și bucură-te de confortul condusului cu o singură pedală și de forța
+                  impresionantă a propulsiei electrice, cu zero emisii.</p>
+              </div>
+            </div>
+            <div class="container-car-images">
+              <div class="car-images">
+                <!--denumire comuna-->
+                <div class="horizontal-car"><img src="images/volvoxc40-interior1.jpg"></div>
+                <div class="big-car"><img src="images/volvoxc40-interior2.jpg"></div>
+                <div class="vertical-car"><img src="images/volvoxc40-interior3.jpg"></div>
+                <div class="vertical-car"><img src="images/volvoxc40-interior4.jpg"></div>
+                <div class="horizontal-car"><img src="images/volvoxc40-interior5.jpg"></div>
+              </div>
+            </div>
+
+            <div id="Cvolvoxc40-tehnologie" class="about-describe-car">
+              <h2 class="title-car">TEHNOLOGIE</h2>
+              <h2>TEHNOLOGIE INTUITIVĂ</h2>
+              <div class="text-describe-car">
+                <p>Având Google Maps complet integrat în mașină și controlul vocal hands free disponibil prin Google
+                  Assistant, informațiile despre trafic în timp real și recalcularea automată a traseului îți permit
+                  să
+                  ajungi la destinație cu mai puține bătăi de cap.</p>
+                <p>Vorbește cu Google în mașina ta XC40 Recharge, pentru a da comenzi fără a-ți folosi mâinile. Prin
+                  intermediul unei interfețe familiare, te poți bucura de divertisment și poți păstra legătura cu
+                  prietenii, familia și colegii folosindu-ți doar vocea. Prin accesul la aplicațiile de pe Google Play
+                  și sistemul audio premium Harmon Kardon, tu, mașina și universul tău sunteți mai aproape ca oricând.
+                </p>
+                <p>Încălzește sau răcește în prealabil interiorul mașinii sau alege dintre multe alte opțiuni –
+                  printr-o
+                  comandă simplă, aplicația Volvo On Call îți permite să îți creezi atmosfera dorită în habitaclu, de
+                  la
+                  distanță, înainte de a porni.</p>
+              </div>
+            </div>
+            <div class="container-car-images">
+              <div class="car-images">
+                <!--denumire comuna-->
+                <div class="horizontal-car"><img src="images/volvoxc40-tehnologie1.jpg"></div>
+                <div class="big-car"><img src="images/volvoxc40-tehnologie3.jpg"></div>
+                <div class="vertical-car"><img src="images/volvoxc40-tehnologie5.jpg"></div>
+                <div class="vertical-car"><img src="images/volvoxc40-tehnologie2.jpg"></div>
+                <div class="horizontal-car"><img src="images/volvoxc40-tehnologie4.jpg"></div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+          <!--SKODA KODIAQ-->
+
+          <div id="Cskodakodiaq" class="about-car">
+            <div class="navbar-car">
+              <div class="menu-bar-car">
+                <a href="#"><i class="fa fa-bars"></i></a>
+                <div class="logo-car font-effect-shadow-multiple">KODIAQ</div>
+                <ul class="submenu-car">
+                  <li><a href="#Cskodakodiaq-exterior">Exterior</a></li>
+                  <li><a href="#Cskodakodiaq-interior">Interior</a></li>
+                  <li><a href="#Cskodakodiaq-tehnologie">Tehnologie</a></li>
+                  <li><a href="#Cskodakodiaq-dimensiuni">Dimensiuni</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="Cskodakodiaq-exterior" class="about-describe-car">
+              <h2 class="title-car">EXTERIOR</h2>
+              <h2>DESIGN PUTERNIC</h2>
+              <div class="text-describe-car">
+                <p>Farurile cu design înnoit şi grila radiatorului emana siguranţă de sine şi nu ascund sub nicio
+                  formă
+                  identitatea de marcă a SUV-ului Skoda Kodiaq.
+                  Din îmbinarea liniilor elegante, cu muchiile dinamice şi alura de ansamblu robustă, a luat naştere o
+                  caroserie elegantă, cu un design echilibrat. </p>
+                <p>Partea din spate a automobilului este dominată de blocurile optice triunghiulare, poziţionate la
+                  înălţime mai mare şi extinse până pe partea laterală a caroseriei.
+                  Se face aici remarcat şi înscrisul inconfundabil: Skoda. Bara de protecţie înaltă impune respect şi
+                  semnalizează standardele ridicate ale celui de la volan.
+                </p>
+                <p>Grila radiatorului modelului Kodiaq traduce designul mărcii Skoda in limbajul de design al
+                  SUV-urilor
+                  Skoda. Astfel, cadrul cromat are formă de trapez, iar cele 13 lamele verticale aranjate în perechi
+                  pot
+                  fi opţional cromate pentru linia de echipare Style.</p>
+              </div>
+            </div>
+            <div class="container-car-images">
+              <div class="car-images">
+                <!--denumire comuna-->
+                <div class="horizontal"><img src="images/skodakodiaq-exterior1.jpg"></div>
+                <div class="vertical"><img src="images/skodakodiaq-exterior2.jpg"></div>
+                <div><img src="images/skodakodiaq-exterior3.jpg"></div>
+                <div class="big"><img src="images/skodakodiaq-exterior4.jpg"></div>
+                <div><img src="images/skodakodiaq-exterior5.jpg"></div>
+                <div class="horizontal"><img src="images/skodakodiaq-exterior6.jpg"></div>
+              </div>
+              <div id="Cskodakodiaq-interior" class="about-describe-car">
+                <h2 class="title-car">INTERIOR</h2>
+                <h2>SPAŢIU GENEROS</h2>
+                <div class="text-describe-car">
+                  <p>La interior veți aprecia cu siguranță confortul ridicat și senzația placută că sunteți optim
+                    protejat, inlcusiv datorită stabilității excelente a acestui automobil robust.
+                    Planșa de bord este dominată de patru prize de aer verticale de mari dimensiuni, de ecranul mare
+                    al
+                    sistemului de infotainment și de un bandou decorativ marcant, ce separă partea superioară a
+                    bordului
+                    de secțiunea sa inferioară.
+                  </p>
+                  <p>Fie că sunteți părinți de bebelusi sau de adolescenți, că aveți doi sau cinci copii: la bordul
+                    unui
+                    Kodiaq toată lumea are loc. SUV-ul Skoda este automobilul de familie ideal.
+                    Desigur că unele scaune exterioare de pe al doilea rând de locuri sunt prevăzute cu sisteme de
+                    prindere ISOFIX.</p>
+                  <p>Când veti calatorii cu un Kodiaq, nu veți fi niciodată nevoiți să renuntați la bagaje.
+                    Împachetați
+                    tot ce aveți nevoie!
+                    E suficient pentru toată lumea și toate bagajele. Portbagajul cuprinde 835 l în varianta cu cinci
+                    locuri, și chiar 2.065 l cu bancheta rabatată.
+                  </p>
+                </div>
+              </div>
+              <div class="container-car-images">
+                <div class="car-images">
+                  <!--denumire comuna-->
+                  <div class="horizontal-car"><img src="images/skodakodiaq-interior1.jpg"></div>
+                  <div class="big-car"><img src="images/skodakodiaq-interior4.jpg"></div>
+                  <div class="vertical-car"><img src="images/skodakodiaq-interior3.jpg"></div>
+                  <div class="vertical-car"><img src="images/skodakodiaq-interior2.jpg"></div>
+                  <div class="horizontal-car"><img src="images/skodakodiaq-interior5.jpg"></div>
+                </div>
+              </div>
+
+              <div id="Cskodakodiaq-tehnologie" class="about-describe-car">
+                <h2 class="title-car">TEHNOLOGIE</h2>
+                <h2>TEHNOLOGIE LA PAS </h2>
+                <div class="text-describe-car">
+                  <p>Asistenul de frânare avertizează când detectează riscul de coliziune cu eventualele obstacole la
+                    manevrele de parcare. Pentru aceasta face uz de datele generate de senzori, de parametrii dinamici
+                    și de informațiile privind unghiul bracare al volanului.
+                    Iar dacă la manevrele de parcare în marșarier nu frânaţi la timp, în ciuda semnalului de
+                    avertizare
+                    asistentul optional Manoeuvre Assist oferit pentru Kodiaq va frâna automat autoturismul.</p>
+                  <p>Asistentul pentru parcare ghidează semi-automatizat autoturismul pe locurile de parcare
+                    perpendiculare.
+                    Sistemul poate chiar ghida automobilul la ieşirea de pe locurile de parcare perpendiculare şi va
+                    ajuta la parcarea între liniile de marcaj prin controlul automat al volanului.</p>
+                  <p>Cu asistentul pentru manevrarea cu remorcă "Trailer Assist", sistemul va prelua controlul când vă
+                    deplasaţi încet în spate cu remorca sau rulota ataşată la autoturism.
+                    Dumneavoastră mai trebuie doar să decideţi încotro doriţi să mergeţi, când anume să demareze
+                    autoturismul şi unde anume să oprească.
+                  </p>
+                </div>
+              </div>
+              <div class="container-car-images">
+                <div class="car-images">
+                  <!--denumire comuna-->
+                  <div class="horizontal-car"><img src="images/skodakodiaq-tehnologie1.jpg"></div>
+                  <div class="big-car"><img src="images/skodakodiaq-tehnologie3.jpg"></div>
+                  <div class="vertical-car"><img src="images/skodakodiaq-tehnologie5.jpg"></div>
+                  <div class="vertical-car"><img src="images/skodakodiaq-tehnologie2.jpg"></div>
+                  <div class="horizontal-car"><img src="images/skodakodiaq-tehnologie4.jpg"></div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!--RANGE ROVER EVOQUE-->
+
+            <div id="Crangeroverevoque" class="about-car">
+              <div class="navbar-car">
+                <div class="menu-bar-car">
+                  <a href="#"><i class="fa fa-bars"></i></a>
+                  <div class="logo-car font-effect-shadow-multiple">EVOQUE</div>
+                  <ul class="submenu-car">
+                    <li><a href="#Crangeroverevoque-exterior">Exterior</a></li>
+                    <li><a href="#Crangeroverevoque-interior">Interior</a></li>
+                    <li><a href="#Crangeroverevoque-tehnologie">Tehnologie</a></li>
+                    <li><a href="#Crangeroverevoque-dimensiuni">Dimensiuni</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="Crangeroverevoque-exterior" class="about-describe-car">
+                <h2 class="title-car">EXTERIOR</h2>
+                <h2>DESIGN PUTERNIC</h2>
+                <div class="text-describe-car">
+                  <p>Încrezator şi special, Range Rover Evoque se remarcă prin linii rafinate, care îi conferă o
+                    personalitate aparte. Elegante, robuste şi practice: personalizaţi şi mai mult modelul Range Rover
+                    Evoque, cu ajutorul accesoriilor pentru exterior şi interior.</p>
+                  <p>Range Rover Evoque hibrid cu conectare la priză îmbină motorul pe benzină cu 3 cilindri, de 1,5
+                    litri şi motorul electric, pentru a oferi o putere maxima de 309 CP. Puteţi utiliza modul hibrid
+                    cu
+                    motoarele funcţionând în paralel sau modul EV.</p>
+                  <p>Cu o formă specifică de coupé si faruri cu LED, Range Rover Evoque este un succesor demn al unui
+                    model foarte apreciat. Aspectul atrăgător se îmbină cu echipamentele practice precum oglinzile
+                    exterioare încălzite şi sistemul Pivi cu ecran tactil de 10”.</p>
+                </div>
+              </div>
+              <div class="container-car-images">
+                <div class="car-images">
+                  <!--denumire comuna-->
+                  <div class="horizontal-car"><img src="images/rangeroverevoque-exterior1.jpg"></div>
+                  <div class="vertical-car"><img src="images/rangeroverevoque-exterior2.jpg"></div>
+                  <div><img src="images/rangeroverevoque-exterior3.jpg"></div>
+                  <div class="big-car"><img src="images/rangeroverevoque-exterior4.jpg"></div>
+                  <div><img src="images/rangeroverevoque-exterior5.jpg"></div>
+                  <div class="horizontal-car"><img src="images/rangeroverevoque-exterior6.jpg"></div>
+                </div>
+                <div id="Crangeroverevoque-interior" class="about-describe-car">
+                  <h2 class="title-car">INTERIOR</h2>
+                  <h2>INTERIOR DE CALITATE </h2>
+                  <div class="text-describe-car">
+                    <p>Suprafeţele aerisite şi gama de materiale premium atent prelucrate ajută la crearea unei
+                      ambiante
+                      perfecte.
+                      Profitaţi de confortul excelent de la bordul modelului Range Rover Evoque, cu scaune în faţa
+                      încalzite şi ventilate, care vă permit să reglaţi temperatura în funcţie de preferinţe.</p>
+                    <p>Pentru o eleganţă sporită a interiorului modelului Range Rover Evoque este utilizată o gama de
+                      materiale contemporane pentru finisare. Toate îmbunătătesc confortul şi stilul, pentru a
+                      satisface
+                      şi cele mai exigente gusturi.
+                    </p>
+                    <p>În interiorul modelului Range Rover Evoque veţi găsi elemente care îmbunătătesc ergonomia, cum
+                      ar
+                      fi consola centrală cu compartiment de depozitare şi cotiera divizată. Astfel, habitaclul este
+                      acum mai flexibil şi mai confortabil.
+                    </p>
+                  </div>
+                </div>
+                <div class="container-car-images">
+                  <div class="car-images">
+                    <!--denumire comuna-->
+                    <div class="horizontal-car"><img src="images/rangeroverevoque-interior1.jpg"></div>
+                    <div class="big-car"><img src="images/rangeroverevoque-interior4.jpg"></div>
+                    <div class="vertical-car"><img src="images/rangeroverevoque-interior3.jpg"></div>
+                    <div class="vertical-car"><img src="images/rangeroverevoque-interior5.jpg"></div>
+                    <div class="horizontal-car"><img src="images/rangeroverevoque-interior2.jpg"></div>
+                  </div>
+                </div>
+
+                <div id="Crangeroverevoque-tehnologie" class="about-describe-car">
+                  <h2 class="title-car">TEHNOLOGIE</h2>
+                  <h2>PERFORMANŢE & CABABILITĂŢI</h2>
+                  <div class="text-describe-car">
+                    <p>Range Rover Evoque este complet echipat pentru aventurile urbane ale secolului 21. Sistemele
+                      inovatoare precum Pivi, Apple Carplay®1 şi Android AutoTM2 asigură o conectivitate îmbunătătită,
+                      iar ecranul tactil intuitiv uimeşte pin simplitate. În plus, sistemul audio surround MeridianTM
+                      asigură o calitate excelentă a audiţiei.</p>
+                    <p>Îmbină calităţile în utilizarea zilnică şi capabilităţile în off-road. Range Rover Evoque este
+                      echipat cu sisteme Terrain Response 2 şi All Terrain Progress Control inteligente, care vă
+                      permit
+                      să faceţi faţă fără probleme oricărei schimbări a vremii sau suprafeţei de deplasare.</p>
+                    <p>Cu Range Rover Evoque detineţi controlul în orice situaţie. Selectaţi motorizarea care
+                      corespunde
+                      cerinţelor dumneavoastră indiferent dacă apreciaţi un stil de condus mai sportiv sau un consum
+                      mai
+                      redus de combustibil. În plus, sistemul Adaptive Dynamics asigură manevrabilitate şi
+                      comportament
+                      rutier la cel mai înalt nivel.</p>
+                  </div>
+                </div>
+                <div class="container-car-images">
+                  <div class="car-images">
+                    <!--denumire comuna-->
+                    <div class="horizontal-car"><img src="images/rangeroverevoque-tehnologie1.jpg"></div>
+                    <div class="big-car"><img src="images/rangeroverevoque-tehnologie3.jpg"></div>
+                    <div class="vertical-car"><img src="images/rangeroverevoque-tehnologie5.jpg"></div>
+                    <div class="vertical-car"><img src="images/rangeroverevoque-tehnologie2.jpg"></div>
+                    <div class="horizontal-car"><img src="images/rangeroverevoque-tehnologie4.jpg"></div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              <footer class="footer-page">
+
+                <section class="page-links">
+                  <div class="footerLinks">
+                    <p class="title-footer">CONTACT</p>
+                    <ul>
+                      <li><a href="mailto:contact-us@automoto.com">Email</a></li>
+                      <li><a href="tel:0721345678">Telefon</a></li>
+                    </ul>
+                  </div>
+                  <div class="footerLinks">
+                    <p class="title-footer">INFORMATII</p>
+                    <ul>
+                      <li><a href="#">Cum comand</a></li>
+                      <li><a href="#">Cum platesc</a></li>
+                      <li><a href="#">Livrarea comenzii</a></li>
+                    </ul>
+                  </div>
+                  <div class="footerLinks">
+                    <p class="title-footer">SERVICII</p>
+                    <ul>
+                      <li><a href="#">Livrare</a></li>
+                      <li><a href="#">Service</a></li>
+                      <li><a href="#">Program</a></li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="grid-footer">
+                  <div class="social-media">
+                    <a href="#" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                  <div class="logo-footer font-effect-shadow-multiple onboarding">
+                    <a href="#" target="_self">AUTO MOTO</a>
+                  </div>
+                  <div class="politica">
+                    <ul>
+                      <li>
+                        <a href="https://gdprcomplet.ro/politica-de-confidentialitate/" target="_blank">Politica de
+                          confidentialitate</a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank">Preferinte Cookies</a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank">Mentiuni legale</a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+              </footer>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

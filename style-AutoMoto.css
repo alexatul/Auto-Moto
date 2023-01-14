@@ -1,0 +1,584 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(16, 15, 15);
+  font-family: 'Quicksand', sans-serif;
+  margin:0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.head{
+  position: relative;
+  width: 100%;
+}
+
+#clearfix:after {
+  visibility: hidden; 
+  display: block; 
+  font-size: 0;
+  content: " "; 
+  clear: both;
+  height: 0;
+ } 
+
+.logo img{
+  position: relative;
+  margin-top:20px;
+  margin-left: 20px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  width: 100px;
+  float: left;
+}
+
+.logo img, nav, .search-box, .container-cart, .butt {
+  display: inline-block;
+}
+
+
+/*MENU*/
+nav {
+  display: block;
+  font: 14px Helvetica, Tahoma, serif;
+  background-color: rgb(16, 15, 15);
+  width:100%;
+  margin:0 auto;
+}
+
+nav .btn{
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+nav li {
+  list-style: none;
+  margin-top: 30px;
+  float: left;
+}
+
+nav .button-dropdown {
+  position: relative;
+}
+
+nav li a {
+  display: block;
+  color: rgb(235, 193, 126);
+  background-color: inherit;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+nav li .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+nav li .dropdown-menu.active {
+  display: block;
+}
+
+nav li .dropdown-menu a {
+  width: 150px;
+  background-color: rgb(16, 15, 15);
+}
+
+
+nav li .dropdownLink {
+  display: none;
+  position: absolute;
+  left: 180px;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+nav li .dropdownLink.active {
+  display: block;
+}
+
+nav li .dropdownLink a {
+  width: 150px;
+}
+
+.fa-down{
+  color: rgb(235, 193, 126);
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.fa-right{
+  color: rgb(235, 193, 126);
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+nav a,
+nav a:after,
+nav a:before {
+  transition: all .5s;
+}
+
+nav.shift a {
+  position:relative;
+  z-index: 1;
+}
+
+nav.shift a:hover {
+  color: #91640F;
+}
+
+nav.shift a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav.shift a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+/*SEARCH BOX*/
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  float: left;
+  margin-top: 30px;
+}
+.input-search{
+  height: 36px;
+  width: 36px;
+  border-style: none;
+  padding: 6px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #91640F;
+  padding-right: 40px;
+  color:#f8f4f4;
+}
+.input-search::placeholder{
+  color: rgba(255,255,255,.5);
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 36px;
+  height: 36px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
+/*CART*/
+.container-cart{
+  background: transparent;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: 46px;
+  float: right;
+}
+.container-cart a{
+  text-decoration: none;   
+  color: rgb(235, 193, 126); 
+  position: relative;
+  padding: 12px 14px;
+}
+.fa-shopping-cart{
+  margin-right: 10px;
+  font-size: 24px;
+  color: rgb(235, 193, 126); 
+}
+
+
+/*LOGIN*/
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Set a style for all buttons */
+
+.butt{
+  float: right;
+  margin-top: 32px;
+}
+.btnlog {
+  background-color: transparent;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4px;
+  border-radius: 1.3em;
+  border: 1.5px solid white;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: rgb(235, 193, 126) ;
+}
+
+.imgLog{
+  width: 20px;
+  margin-right: 6px;
+  fill: white;
+}
+
+.login-container {
+  background-color: hsla(40, 100%, 6%, 0.6);
+  padding: 5rem 3rem;
+  width: 20%;
+  min-width: 30rem;
+  max-width: 50rem;
+  border-radius: 1rem;
+}
+
+.login-container h3 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* The Close Button (x) */
+.login-container .close {
+  position: absolute;
+  right: 25px;
+  top: 110px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 30%;
+  top: 30px;
+  background-color: rgb(6, 6, 6); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.input-group label {
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.input-group input {
+  font-size: 1.5rem;
+  padding: 0.1rem 0.25rem;
+  background-color: hsla(40, 100%, 91%, 0.3);
+  border: 1px solid hsl(40, 100%, 6%);
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: lighter;
+}
+
+.input-group input:focus {
+  border: 1px solid hsl(40, 100%, 50%)
+}
+
+.login-button {
+  padding: 1rem 3rem;
+  width: 100%;
+  border-radius: 5px; 
+  background-color: hsla(40, 100%, 50%, 0.1);
+  border: 1px solid hsl(40, 100%, 50%);
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: lighter;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: hsla(40, 100%, 50%, 0.3)
+}
+
+.login-button:focus {
+  background-color: hsla(40, 100%, 50%, 0.5)
+}
+
+
+.remember{
+  margin-top: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 8px 10px;
+  background-color: #f44336;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+span.psw {
+  float: right;
+  padding-top: 30px;
+}
+
+.containerlog{
+  background-color: transparent;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+.bg-image-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/Peugeot-308\(2022\).jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.business{
+  position: relative;   
+}
+
+.buss img{
+ display: block;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.title1{
+  font-family: 'Uber Move Text', sans-serif;
+
+  position: absolute;
+  top: 64px; 
+  width: 100%; 
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 64px;
+  margin-left: 32px;
+
+}
+
+.paragraph1{
+  font-family: 'Uber Move Text', sans-serif;
+
+  position: absolute;
+  top: 140px; 
+
+  width: 100%; 
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 24px;
+  padding-left: 64px;
+  margin-left: 32px;
+  }
+.title1{
+  position: absolute;
+  color: rgb(16, 15, 15);
+  font-size: 4vh;
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 70px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.title{
+  position: absolute;
+  color: rgb(16, 15, 15);
+   font-size: 4vh;
+   font-family: 'EB Garamond', serif;
+   font-weight: 600;
+   margin-top: 30px;
+   margin-left: 40px;
+   letter-spacing: 2px;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+.discover{
+  background-color: rgb(225, 225, 225);
+  margin-top: 30px;
+  padding: 50px;
+}
+
+
+
+
+/* Mobile navigation */
+ .nav-mobile {
+     display: none;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: transparent;
+     height: auto;
+     width: 70px;
+}
+ @media only screen and (max-width: 800px) {
+     .nav-mobile {
+         display: block;
+    }
+     nav  {
+         width: 50%;
+         padding: 10px 0 15px;
+    }
+    nav ul {
+         display: none;
+    }
+   nav ul {
+     position: absolute;
+   }
+     nav ul li {
+         float: none;
+    }
+     nav ul li a, .search-box, .butt, .container-cart {
+         padding: 8px;
+         background: transparent;
+           text-align: center;
+       align-items: center;
+
+    }
+     nav ul li ul li a {
+         padding-left: 30px;
+    }
+     .dropdown-menu {
+         position: static;
+}
+    .dropdown-menu2 {
+         position: static;
+   }
+ @media screen and (min-width:800px) {
+     nav {
+         display: block !important;
+    }
+}
+ #navbar-toggle {
+     position: absolute;
+     left: 18px;
+     top: 15px;
+     cursor: pointer;
+     padding: 10px 35px 16px 2px;
+}
+ #navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+     cursor: pointer;
+     border-radius: 1px;
+     height: 3px;
+     width: 30px;
+     background: #ffffff;
+     position: absolute;
+     display: block;
+     content: '';
+     transition: all 300ms ease-in-out;
+}
+ #navbar-toggle span:before {
+     top: -10px;
+}
+ #navbar-toggle span:after {
+     bottom: -10px;
+}
+ #navbar-toggle.active span {
+     background-color: transparent;
+}
+ #navbar-toggle.active span:before, #navbar-toggle.active span:after {
+     top: 0;
+}
+ #navbar-toggle.active span:before {
+     transform: rotate(45deg);
+}
+ #navbar-toggle.active span:after {
+     transform: rotate(-45deg);
+}
+}

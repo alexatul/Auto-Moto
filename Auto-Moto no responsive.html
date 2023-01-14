@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-AutoMoto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500;1,600&family=Tangerine:wght@700&display=swap" rel="stylesheet">  
+    <script type="text/javascript" src="scriptAutoMoto.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>   
+
+    <title>Auto Moto</title>
+</head>
+<body>
+<header>
+  <div class="head">
+             
+    <!--MENU-->
+<nav  id="clearfix" class="shift">
+  <div class="logo">
+    <img  src="images/logo.png" alt="logo">
+  </div>
+  <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+  <ul >
+    <li class="button-dropdown">
+      <a href="javascript:void(0)" class="btn dropdown-toggle"> Modele<i class="fa-thin fa-down"></i></a>
+      <ul class="dropdown-menu">
+        <li class="button-dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle button">Modele electrice<i class="fa-thin fa-right"></i></a>
+            <ul class="dropdown-menu dropdownLink">
+              <li>
+                <a href="#">Peugeot e-208</a>
+              </li>
+              <li>
+                <a href="#">Peugeot e-Boxer</a>
+              </li>
+              <li>
+                <a href="#">Opel Corsa-e</a>
+              </li>
+            </ul>
+        </li>
+                  
+        <li class="button-dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle"> Modele hybrid<i class="fa-thin fa-right"></i></a>
+          <ul class="dropdown-menu dropdownLink">
+            <li>
+              <a href="#">Lexus ES</a>
+            </li>
+            <li>
+              <a href="#">Suzuki Vitara</a>
+            </li>
+            <li>
+              <a href="#">Toyota Camry</a>
+            </li>
+          </ul>
+        </li>
+                  
+        <li class="button-dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle"> Modele SUV<i class="fa-thin fa-right"></i></a>
+          <ul class="dropdown-menu dropdownLink">
+            <li>
+              <a href="#">Volvo XC40</a>
+            </li>
+            <li>
+              <a href="#">Skoda Kodiaq</a>
+            </li>
+            <li>
+              <a href="#">Range Rover Evoque</a>
+            </li>
+          </ul>
+        </li>                    
+      </ul>
+    </li>
+              
+    <li class="button-dropdown">
+      <a href="javascript:void(0)" class="btn dropdown-toggle"> Showroom<i class="fa-thin fa-down"></i></a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="#">Bucuresti<i class="fa-thin fa-right"></i></a>
+        </li>
+        <li>
+          <a href="#">Brasov<i class="fa-thin fa-right"></i></a>
+        </li>
+        <li>
+          <a href="#">Timisoara<i class="fa-thin fa-right"></i></a>
+        </li>
+        <li>
+          <a href="#">Iasi<i class="fa-thin fa-right"></i></a>
+        </li>
+      </ul>
+    </li>
+ 
+
+<!--SEARCH BOX-->
+<div class="search-box">
+  <button class="btn-search"><i class="fa fa-search"></i></button>
+  <input type="text" class="input-search" placeholder="Type to Search...">
+</div>
+
+
+
+<!--LOGIN-->
+<div class="butt">
+<button class="btnlog" onclick="document.getElementById('id01').style.display='block'">
+  <img class="imgLog" src="images/login.svg"/>
+  Login
+</button>
+</div>
+<div class="bg">
+  <div id="id01" class="login-container modal">
+    <h3>Welcome</h3>
+    <form action="action_process.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      
+    <div class="containerlog">
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <button type="submit" class="login-button">Sign In</button>
+      <label class="remember">
+        <input type="checkbox" checked="checked" name="remember" class="remember"> Remember me
+      </label>
+    </div>
+    <div class="containerlog">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+    </form>
+  </div>
+</div>
+  
+  
+  <!--CART-->
+<div class="container-cart">
+  <a href="#"><i class="fa fa-shopping-cart blue-color"></i>Comanda mea</a>
+</div>
+
+  </ul>   
+</nav>
+
+</div>
+
+
+
+</header>
+
+<div class="bg-image-container">
+  <div class="title">
+    <p class="title1">AUTO MOTO</p>
+    <p>CELE MAI NOI MODELE</p>
+  </div>
+</div>
+
+<div class="discover">
+  <p>DESCOPERA MODELELE</p>
+</div>
+
+
+
+
+ <script>
+		(function($) { 
+  $(function() { 
+
+    //  open and close nav 
+    $('#navbar-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+
+
+    // Hamburger toggle
+    $('#navbar-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+
+
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.dropdown-menu').slideToggle("slow");
+
+      // Close dropdown when select another dropdown
+      $('.dropdown-menu').not($(this).siblings()).hide("slow");
+      e.stopPropagation();
+    });
+
+
+    // Click outside the dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.dropdown-menu').hide();
+    });
+  }); 
+})(jQuery); 
+ </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>   
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</body>
+</html>
